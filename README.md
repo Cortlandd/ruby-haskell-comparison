@@ -15,6 +15,6 @@ puts "hi" &nbsp;; &nbsp;puts "yo" | putStrLn "hi" &nbsp;>> &nbsp;putStrLn "yo" |
  a &nbsp;= &nbsp;gets<br />puts &nbsp;a|a &nbsp;<- &nbsp;getContent<br />print &nbsp;a<br /getContent >>= print|STDIN/STDOUT
  def plan_name<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@user.account.plan.name<br />end|planName : : User -> String<br />planName = name . plan . account |
 def slugs(projects)<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;projects<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.map { IprojectI project<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.name<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.downcase }.uniq<br />end |slugs : : [Project] -> [String]<br />slugs = uniq .<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;map (downcase . projectName) |
-
+"a".upcase | toUpper "a" | A
 
 
